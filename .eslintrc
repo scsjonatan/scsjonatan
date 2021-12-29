@@ -24,13 +24,6 @@
     "sort-keys": ["warn"],
     "sort-vars": ["warn"],
     "no-extra-semi": ["warn"],
-    "sort-imports": [
-      "warn",
-      {
-        "memberSyntaxSortOrder": ["all", "none", "single", "multiple"],
-        "ignoreCase": true
-      }
-    ],
     "react/jsx-sort-props": [
       "warn",
       {
