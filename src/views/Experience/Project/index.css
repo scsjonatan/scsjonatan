@@ -1,0 +1,47 @@
+.project-element img {
+  height: 100%;
+
+  width: 100%;
+}
+
+.project-element {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-element figcaption {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: 0.45s ease-in-out;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: '#fff';
+  opacity: 0;
+  background: rgba(60, 60, 60, 0.7);
+}
+
+.project-element figcaption h3 {
+  font-size: 1.5rem;
+}
+
+.project-element figcaption p {
+  color: white;
+  margin: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.project-element figcaption p a {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.project-element:hover figcaption {
+  opacity: 1;
+}

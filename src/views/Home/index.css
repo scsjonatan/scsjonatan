@@ -1,23 +1,44 @@
 .home-container {
   padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
   width: 10rem;
 }
 
-b {
+.personal-data {
+  text-align: center;
+}
+
+.personal-data h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.personal-data h2 {
+  font-size: 1.5rem;
+}
+
+.personal-data p {
+  margin: 1rem;
+}
+
+.personal-data b {
   color: var(--color-primary-dark);
 }
 
 @media only screen and (min-width: 45em) {
-  img {
-    width: 15rem;
+  .home-container {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .home-container .row {
-    display: flex;
-    align-items: center;
+  img {
+    width: 15rem;
   }
 }
 

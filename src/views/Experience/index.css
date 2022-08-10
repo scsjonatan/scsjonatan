@@ -1,0 +1,36 @@
+.experience-header {
+  padding: 2rem 0;
+}
+
+.experience-header h2 {
+  font-size: 2rem;
+}
+.experience-header p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.projects-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projects-list ul li {
+  margin: 0.5rem 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 45em) {
+  .projects-list ul {
+    flex-direction: row;
+  }
+  .projects-list ul li {
+    margin: 0.5rem;
+    width: 33%;
+  }
+}

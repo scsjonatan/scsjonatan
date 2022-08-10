@@ -6,20 +6,16 @@ import peaceAndLoveEmoji from '../../assets/images/emojis/peace-and-love.png'
 
 const Home = () => {
   return (
-    <section>
+    <section className='principal-container'>
       <Waves color={colors.colorPrimaryDark} />
-      <div className='home-container container'>
-        <div className='row center'>
-          <div className='col-6'>
-            <img alt='Jonatan Santa Cruz' src={peaceAndLoveEmoji} />
-          </div>
-          <div className='col-6 personal-data'>
-            <h1>Jonatan Santa Cruz</h1>
-            <h2>Frontend Developer</h2>
-            <p>
-              Passion to <b>learn</b>, <b>develop</b> and <b>create</b>.
-            </p>
-          </div>
+      <div className='secondary-container home-container'>
+        <img alt='Jonatan Santa Cruz' src={peaceAndLoveEmoji} />
+        <div className='personal-data'>
+          <h1>Jonatan Santa Cruz</h1>
+          <h2>Frontend Developer</h2>
+          <p>
+            Passion to <b>learn</b>, <b>develop</b> and <b>create</b>.
+          </p>
         </div>
       </div>
     </section>
