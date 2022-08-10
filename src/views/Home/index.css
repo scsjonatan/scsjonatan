@@ -1,4 +1,28 @@
-.home_container {
-  margin: 0 auto;
-  text-align: center;
+.home-container {
+  padding: 3rem 0;
+}
+
+img {
+  width: 10rem;
+}
+
+b {
+  color: var(--color-primary-dark);
+}
+
+@media only screen and (min-width: 45em) {
+  img {
+    width: 15rem;
+  }
+
+  .home-container .row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  img {
+    width: 18rem;
+  }
 }
