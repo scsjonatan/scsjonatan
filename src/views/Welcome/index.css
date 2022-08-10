@@ -1,0 +1,47 @@
+#WelcomeSection {
+  background: var(--color-primary-light);
+  height: 30rem;
+  position: relative;
+}
+
+#WelcomeSection img {
+  position: absolute;
+  bottom: 0;
+  width: 10rem;
+  right: 0;
+}
+
+.welcome-content {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.welcome-content h2 {
+  font-size: 4rem;
+}
+
+.welcome-content p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.welcome-content b {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 45em) {
+  #WelcomeSection img {
+    width: 13rem;
+  }
+}
+
+@media only screen and (min-width: 85rem) {
+  .welcome-content {
+    padding-top: 10rem;
+  }
+  #WelcomeSection img {
+    right: 5rem;
+
+    width: 15rem;
+  }
+}

@@ -1,5 +1,6 @@
 @import './common/styles/colors.css';
-@import './common/styles/grid.css';
+@import './common/styles/containers.css';
+@import './common/styles/reset.css';
 
 body {
   margin: 0;
