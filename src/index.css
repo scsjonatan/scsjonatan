@@ -1,4 +1,8 @@
+@import './common/styles/colors.css';
+@import './common/styles/grid.css';
+
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-bg-light);
 }
