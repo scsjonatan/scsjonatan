@@ -1,0 +1,78 @@
+#SkillsSection {
+  padding-top: 4rem;
+  transition: 0.8s;
+}
+
+.skills-container .title-container {
+  text-align: right;
+}
+
+.skills-container .title-container h2 {
+  font-size: 2rem;
+}
+
+.skills-container .title-container p {
+  margin: 1rem 0;
+}
+
+.skills-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.skills-container ul li {
+  text-align: center;
+  width: 33%;
+  padding-bottom: 2rem;
+}
+
+.skills-container ul li img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.skills-container ul .item-selected img {
+  filter: grayscale(0);
+  transition: 0.8s;
+}
+
+.skills-container .skill-description h3 {
+  font-size: 1.9rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: bold;
+  transition: 0.8s;
+}
+
+.skills-container .skill-description p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 45em) {
+  .skills-container .skills-gallery {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    flex-direction: row-reverse;
+  }
+
+  .skills-container .skills-gallery ul {
+    width: 50%;
+  }
+
+  .skills-container .skills-gallery .skill-description {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .skills-container ul li img {
+    width: 7rem;
+    height: 7em;
+  }
+}
