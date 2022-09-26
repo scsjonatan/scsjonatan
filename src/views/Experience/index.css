@@ -1,5 +1,6 @@
 #ExperienceContainer {
   padding-top: 4rem;
+  
 }
 
 .experience-header {
@@ -12,6 +13,7 @@
 .experience-header p {
   font-size: 1rem;
   margin: 1rem 0;
+  
 }
 
 .projects-list ul {
@@ -27,7 +29,9 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   overflow: hidden;
+  color: white;
 }
+
 
 @media only screen and (min-width: 45em) {
   .projects-list ul {

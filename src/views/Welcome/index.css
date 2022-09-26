@@ -1,5 +1,5 @@
 #WelcomeSection {
-  background: var(--color-primary-light);
+  background: var(--color-bg-medium);
   height: 30rem;
   position: relative;
 }
