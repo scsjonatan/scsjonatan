@@ -8,7 +8,7 @@ const Project = ({ image, label, description, link }) => (
     <figcaption>
       <h3>{label}</h3>
       <p>
-        {description}{' '}
+        {description}
         <a href={link} rel='noopener noreferrer' target='_blank'>
           More...
         </a>
