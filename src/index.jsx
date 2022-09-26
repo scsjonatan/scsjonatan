@@ -15,12 +15,11 @@ const App = () => {
     <>
       <Home />
       <Welcome />
-      <Skills />
       <Experience />
+      <Skills />
       <Contact />
     </>
   )
 }
 
 root.render(<App />)
-

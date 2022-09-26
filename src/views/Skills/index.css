@@ -1,6 +1,9 @@
 #SkillsSection {
   padding-top: 4rem;
   transition: 0.8s;
+  background: var(--color-bg-dark);
+  color: white;
+  padding: 3rem 0;
 }
 
 .skills-container .title-container {
@@ -34,6 +37,7 @@
   border-radius: 10px;
   filter: grayscale(100%);
   cursor: pointer;
+  
 }
 
 .skills-container ul .item-selected img {

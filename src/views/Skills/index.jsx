@@ -15,11 +15,7 @@ const Skills = () => {
   }
 
   return (
-    <section
-      id='SkillsSection'
-      className='principal-container'
-      style={{ boxShadow: `${skillsData[selected].color} 0px 7px 29px 25px` }}
-    >
+    <section id='SkillsSection' className='principal-container'>
       <div className='secondary-container skills-container'>
         <div className='title-container'>
           <h2>Skills</h2>
@@ -34,13 +30,19 @@ const Skills = () => {
                   className={selected === label ? 'item-selected' : ''}
                   onClick={() => handleSkillClick(label)}
                 >
-                  <img src={image} alt={label} />
+                  <img
+                    src={image}
+                    alt={label}
+                    style={{
+                      boxShadow: selected === label ? `${skillsData[selected].color} 0px 7px 29px 25px` : 'none'
+                    }}
+                  />
                 </li>
               )
             })}
           </ul>
           <div className='skill-description'>
-            <h3 style={{ color: skillsData[selected].color }}>{selected}</h3>
+            <h3>{selected}</h3>
             <p>{skillsData[selected].description}</p>
           </div>
         </div>
