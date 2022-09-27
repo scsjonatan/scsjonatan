@@ -30,7 +30,7 @@ const experiences = [
 ]
 
 const Experience = () => (
-  <section id='ExperienceContainer' className='principal-container'>
+  <section className='principal-container' id='ExperienceContainer'>
     <div className='secondary-container experience-container'>
       <div className='experience-header'>
         <h2>Experience</h2>

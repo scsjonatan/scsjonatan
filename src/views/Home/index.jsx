@@ -1,13 +1,12 @@
 import React from 'react'
 import Waves from '../../components/Waves/index.jsx'
 import './index.css'
-import colors from '../../common/styles/colors'
 import peaceAndLoveEmoji from '../../assets/images/emojis/peace-and-love.png'
 
 const Home = () => {
   return (
-    <section className='principal-container'>
-      <Waves color={colors.colorPrimaryDark} />
+    <section className='principal-container' id='HomeContainer'>
+      <Waves color='#002c59' />
       <div className='secondary-container home-container'>
         <img alt='Jonatan Santa Cruz' src={peaceAndLoveEmoji} />
         <div className='personal-data'>

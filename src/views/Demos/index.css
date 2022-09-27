@@ -13,32 +13,27 @@
 .demos-header p {
   font-size: 1rem;
   margin: 1rem 0;
-  
 }
 
 .demos-list {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .demos-list-element {
-  background: #12194A;
+  background: #12194a;
   padding-top: 9rem;
   border-radius: 10px;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.25, 0.46);
-  
 }
 
 .demos-list-element:hover {
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-    
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 }
 
 .demos-list-element:hover video {
@@ -46,19 +41,15 @@
 }
 
 .demos-list-element img {
-
-    inset: 0px;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transition: opacity 5s ease-in-out 0;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-  
-
-  
+  inset: 0px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  transition: opacity 5s ease-in-out 0;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
 
 .demos-list-element video {
@@ -70,4 +61,11 @@
   z-index: 0;
   border: 0;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 45em) {
+  .demos-list {
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }

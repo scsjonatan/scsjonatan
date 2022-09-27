@@ -4,7 +4,7 @@ import disneyImage from '../../assets/images/demos/viewers-disney.png'
 import disneyVideo from '../../assets/videos/1564674844-disney.mp4'
 
 const Demos = () => (
-  <section id='DemosContainer' className='principal-container'>
+  <section className='principal-container' id='DemosContainer'>
     <div className='secondary-container demos-container'>
       <div className='demos-header'>
         <h2>Demos</h2>
@@ -13,7 +13,7 @@ const Demos = () => (
       <div className='demos-list'>
         <div className='demos-list-element'>
           <a href='https://disney.scsjonatan.me/' rel='noopener noreferrer' target='_blank'>
-            <img src={disneyImage} alt='Disney' />
+            <img alt='Disney' src={disneyImage} />
             <video autoPlay loop playsInline>
               <source src={disneyVideo} type='video/mp4' />
             </video>

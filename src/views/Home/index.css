@@ -1,3 +1,7 @@
+#HomeContainer {
+  padding-bottom: 5rem;
+}
+
 .home-container {
   padding: 3rem 0;
   display: flex;
@@ -28,7 +32,8 @@ img {
 }
 
 .personal-data b {
-  color: var(--color-primary-dark);
+  color: var(--color-bg-dark);
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 45em) {

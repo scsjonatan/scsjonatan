@@ -15,7 +15,7 @@ const Skills = () => {
   }
 
   return (
-    <section id='SkillsSection' className='principal-container'>
+    <section className='principal-container' id='SkillsSection'>
       <div className='secondary-container skills-container'>
         <div className='title-container'>
           <h2>Skills</h2>
@@ -26,15 +26,15 @@ const Skills = () => {
             {skillImages.map(({ image, label }) => {
               return (
                 <li
-                  key={label}
                   className={selected === label ? 'item-selected' : ''}
+                  key={label}
                   onClick={() => handleSkillClick(label)}
                 >
                   <img
-                    src={image}
                     alt={label}
+                    src={image}
                     style={{
-                      boxShadow: selected === label ? `${skillsData[selected].color} 0px 7px 29px 25px` : 'none'
+                      boxShadow: selected === label ? `${skillsData[selected].color} 0px 3px 29px 7px` : 'none'
                     }}
                   />
                 </li>
@@ -80,34 +80,34 @@ const skillImages = [
 
 const skillsData = {
   JavaScript: {
+    color: '#f0db4fd9',
     description:
-      'My development stack is based on JavaScript, I love how much the language has grown over the years and I am excited to see where it will go.',
-    color: '#f0db4fd9'
-  },
-  React: {
-    description:
-      'React was the first library that I learned living all the new features and comunity, I continue using it as parto of my main stack in both professional and personal projects.',
-    color: '#00daffd9'
-  },
-  TypeScript: {
-    description:
-      'I have 2 years of experience using Typescript and love using it on projects that most need the level of organization that it offers.',
-    color: '#2875c4d9'
-  },
-  Sass: {
-    description:
-      'I have used multiple preprocessors such as Stylus and Less, but I prefer Sass as it is the one I have felt most comfortable with in recent years.',
-    color: '#cf649bd9'
-  },
-  Vue: {
-    description:
-      'I had the opportunity to learn Vue, fascinated by its simplicity and features, would definitely use it again.',
-    color: '#41b884d9'
+      'My development stack is based on JavaScript, I love how much the language has grown over the years and I am excited to see where it will go.'
   },
   Node: {
+    color: '#8dc700d9',
     description:
-      'Today I have leaned towards server-side technologies, with Node being my first approach due to the learning curve in my case.',
-    color: '#8dc700d9'
+      'Today I have leaned towards server-side technologies, with Node being my first approach due to the learning curve in my case.'
+  },
+  React: {
+    color: '#00daffd9',
+    description:
+      'React was the first library that I learned living all the new features and comunity, I continue using it as parto of my main stack in both professional and personal projects.'
+  },
+  Sass: {
+    color: '#cf649bd9',
+    description:
+      'I have used multiple preprocessors such as Stylus and Less, but I prefer Sass as it is the one I have felt most comfortable with in recent years.'
+  },
+  TypeScript: {
+    color: '#2875c4d9',
+    description:
+      'I have 2 years of experience using Typescript and love using it on projects that most need the level of organization that it offers.'
+  },
+  Vue: {
+    color: '#41b884d9',
+    description:
+      'I had the opportunity to learn Vue, fascinated by its simplicity and features, would definitely use it again.'
   }
 }
 

@@ -8,10 +8,9 @@ import './index.css'
 const Contact = () => (
   <section className='principal-container' id='ContactSection'>
     <div className='secondary-container contact-container'>
-      <img alt='Call me' className='contact-emoji' src={contactEmoji} />
+      <img alt='Contact me' className='contact-emoji' src={contactEmoji} />
       <div>
         <p>scsjonatan@gmail.com</p>
-        <p>55 54968900</p>
       </div>
       <ul>
         <li>
