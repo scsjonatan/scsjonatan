@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react'
 import './index.css'
 
 const Disney = lazy(() => import('./Disney.jsx'))
+const Dashboard = lazy(() => import('./Dashboard.jsx'))
 
 const Demos = () => (
   <section className='principal-container' id='DemosContainer'>
@@ -13,6 +14,9 @@ const Demos = () => (
       <div className='demos-list'>
         <Suspense>
           <Disney />
+        </Suspense>
+        <Suspense>
+          <Dashboard />
         </Suspense>
       </div>
     </div>

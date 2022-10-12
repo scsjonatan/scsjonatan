@@ -21,8 +21,11 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.demos-list-element {
+.demo-disney-element {
   background: #12194a;
+}
+
+.demos-list-element {
   padding-top: 9rem;
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
@@ -38,6 +41,7 @@
 
 .demos-list-element:hover video {
   opacity: 1;
+  z-index: 1;
 }
 
 .demos-list-element img {
@@ -57,6 +61,7 @@
   height: calc(100% + 4px);
   position: absolute;
   top: -4px;
+  left: -4px;
   opacity: 0;
   z-index: 0;
   border: 0;
