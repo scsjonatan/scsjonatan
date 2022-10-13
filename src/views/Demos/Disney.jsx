@@ -5,7 +5,7 @@ import disneyVideo from '../../assets/videos/disney.mp4'
 
 const Disney = () => {
   return (
-    <div className='demos-list-element demo-disney-element'>
+    <div className='demo-disney-element demos-list-element'>
       <a href='https://disney.scsjonatan.me/' rel='noopener noreferrer' target='_blank'>
         <img alt='Disney' src={disneyImage} />
         <video autoPlay loop playsInline>
