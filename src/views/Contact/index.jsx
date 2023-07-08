@@ -1,7 +1,6 @@
 import React from 'react'
 import github from '../../assets/images/icons/icon-github.svg'
 import linkedin from '../../assets/images/icons/icon-linkedin.svg'
-import twitter from '../../assets/images/icons/icon-twitter.svg'
 import contactEmoji from '../../assets/images/emojis/contact.png'
 import './index.css'
 
@@ -21,11 +20,6 @@ const Contact = () => (
         <li>
           <a href='https://www.linkedin.com/in/jonatan-santa-cruz-b14bb1110/' rel='noopener noreferrer' target='_blank'>
             <img alt='LinkedIn Profile' src={linkedin} />
-          </a>
-        </li>
-        <li>
-          <a href='https://twitter.com/JonatanSCS' rel='noopener noreferrer' target='_blank'>
-            <img alt='Twitter Profile' src={twitter} />
           </a>
         </li>
       </ul>

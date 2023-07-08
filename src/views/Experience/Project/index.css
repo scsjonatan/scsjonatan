@@ -40,6 +40,7 @@
 .project-element figcaption p a {
   color: var(--color-primary-dark);
   text-decoration: none;
+  margin-left: 5px;
 }
 
 .project-element:hover figcaption {
